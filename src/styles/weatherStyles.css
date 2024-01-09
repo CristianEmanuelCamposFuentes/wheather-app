@@ -31,11 +31,13 @@ input[type="text"] {
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #799abd;
   color: #fff;
+  font-weight: bold;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 button:hover {
@@ -83,4 +85,36 @@ img {
     width: 40px;
     height: 40px;
   }
+}
+
+/* weatherStyles.css */
+
+.clima-container {
+  border: 2px solid rgb(184, 184, 243);
+  background-color: #cee7fc;
+  padding: 10px;
+  border-radius: 3px;
+  padding-bottom: 30px;
+  min-height: 300px;
+}
+
+.clima-location {
+  background-color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 1px;
+  padding-top: 10px;
+}
+
+.clima-description {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.clima-temperature {
+  padding: auto;
+  font-weight: bold;
+  font-size: 20px;
+  color: #0056b3;
 }
