@@ -38,6 +38,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   margin-left: 5px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -96,6 +97,16 @@ img {
   border-radius: 3px;
   padding-bottom: 30px;
   min-height: 300px;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .clima-location {
@@ -105,11 +116,22 @@ img {
   font-size: 20px;
   margin-bottom: 1px;
   padding-top: 10px;
+  animation: slideInUp 1s ease;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .clima-description {
   font-style: italic;
   margin-top: 5px;
+  animation: fadeIn 1s ease;
 }
 
 .clima-temperature {
@@ -117,4 +139,14 @@ img {
   font-weight: bold;
   font-size: 20px;
   color: #0056b3;
+  animation: scaleIn 1s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
