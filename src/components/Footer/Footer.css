@@ -1,5 +1,11 @@
 /* Estilos para el pie de página */
-.footer {
-  height: 80px;
-  /* Otros estilos específicos para el pie de página */
+footer {
+  height: 10vh;
+}
+
+.copyrights {
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+  color: #a8acf3;
 }

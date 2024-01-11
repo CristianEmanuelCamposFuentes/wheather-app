@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer className="bg-light">
-            <div className="container">
+            <div className="container-fluid bg-dark text-white text-center">
                 <div className="row">
                     <div className="col-md-4">
                         <h2>Acerca de</h2>
@@ -19,13 +19,14 @@ export default function Footer() {
                         <h2>Contacto</h2>
                         <p><i className="fas fa-phone"></i> +1 123 456 7890</p>
                         <p><i className="fas fa-envelope"></i> info@example.com</p>
-                        <p><i className="fas fa-map-marker-alt"></i> 123 Calle Principal, Ciudad, País</p>
+                        <p><i className="fas fa-map-marker-alt"></i> 123 Calle Principal, Bell Ville, Argentina</p>
                     </div>
                 </div>
+                <div className="container-fluid copyrights">
+                    <p>&copy; 2024 Weather App. Todos los derechos reservados.</p>
+                </div>
             </div>
-            <div className="container-fluid bg-dark text-white text-center py-3">
-                <p>&copy; 2021 Weather App. Todos los derechos reservados.</p>
-            </div>
+
         </footer>
     );
 }
