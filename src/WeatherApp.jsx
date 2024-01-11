@@ -40,8 +40,8 @@ export const WeatherApp = () => {
   }
 
   return (
-    <div className="container">
-      <h1>Aplicacion del clima</h1>
+    <div className="container-app">
+      <h1>Ingrese el nombre de la ciudad deseada</h1>
 
       <form className="form-container" onSubmit={handleSubmit}>
         <div className="input-container">

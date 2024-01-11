@@ -6,9 +6,9 @@ body {
   text-align: center;
 }
 
-.container {
+.container-app {
   min-width: 300px;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
   background: linear-gradient(to bottom, #035292, #b5d8f7);
@@ -159,37 +159,77 @@ img {
   font-size: 20px;
   margin-bottom: 1px;
   padding-top: 10px;
-  animation: slideInUp 1s ease;
+  padding-bottom: 10px;
 }
 
-@keyframes slideInUp {
-  from {
-    transform: translateY(100px);
-  }
-  to {
-    transform: translateY(0);
-  }
+.clima-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.clima-description {
-  font-style: italic;
-  margin-top: 5px;
-  animation: fadeIn 1s ease;
-}
-
-.clima-temperature {
-  padding: auto;
+.clima-main .temperatura {
+  font-size: 40px;
   font-weight: bold;
-  font-size: 20px;
-  color: #0056b3;
-  animation: scaleIn 1s ease;
 }
 
-@keyframes scaleIn {
-  from {
-    transform: scale(0);
+.clima-main .descripcion {
+  font-size: 20px;
+}
+
+.clima-icono {
+  display: flex;
+  justify-content: center;
+}
+
+.clima-icono img {
+  width: 100px;
+  height: 100px;
+}
+
+.clima-extra-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.clima-extra-info .info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+
+.clima-extra-info .info-item span {
+  margin-bottom: 5px;
+}
+
+.clima-extra-info .info-item i {
+  font-size: 24px;
+}
+
+/* media queries */
+
+@media (max-width: 600px) {
+  .clima-main .temperatura {
+    font-size: 30px;
   }
-  to {
-    transform: scale(1);
+
+  .clima-main .descripcion {
+    font-size: 16px;
+  }
+
+  .clima-icono img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .clima-extra-info .info-item {
+    font-size: 14px;
+  }
+
+  .clima-extra-info .info-item i {
+    font-size: 20px;
   }
 }
