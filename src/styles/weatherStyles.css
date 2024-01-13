@@ -4,15 +4,19 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color: #fffaaa;
 }
 
-.container-app {
-  min-width: 300px;
-  max-width: 1000px;
+.weather-app {
   margin: 0 auto;
-  padding: 20px;
   background: linear-gradient(to bottom, #035292, #b5d8f7);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
 }
 
 h1 {
